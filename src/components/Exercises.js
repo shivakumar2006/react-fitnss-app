@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import Pagination from "@mui/material/Pagination";
 import { Box, Stack, Typography } from "@mui/material";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 
-const Exercises = ({ excercises, SetExercises, bodyPart }) => {
+const Exercises = ({ exercises, SetExercises, bodyPart }) => {
+  console.log(exercises);
+
   return (
     <Box id="excercises" sx={{ mt: { lg: "110px" }, mt: "50px", p: "20px" }}>
       <Typography variant="h3" mb="46px">
@@ -16,7 +19,7 @@ const Exercises = ({ excercises, SetExercises, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {Exercises.map((exercise, index) => (
+        {exercises.map((exercise, index) => (
           <p>{exercise.name}</p>
         ))}
       </Stack>
