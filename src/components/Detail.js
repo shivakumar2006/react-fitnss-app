@@ -33,7 +33,7 @@ const Detail = ({ exerciseDetail }) => {
         <Typography variant="h3">{name}</Typography>
         <Typography variant="h6">
           Exercises keep you strong. {name} {""}
-          is one of the best eexrcises to target your {target}. It wil help you
+          is one of the best exercises to target your {target}. It wil help you
           improve your mood and gain energy.
         </Typography>
         {extraDetail.map((item) => (

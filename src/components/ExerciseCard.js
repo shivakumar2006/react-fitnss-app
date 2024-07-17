@@ -12,7 +12,7 @@ const ExerciseCard = ({ exercise }) => {
           sx={{
             ml: "21px",
             color: "fff",
-            background: "#Ffa9a9",
+            background: "#ffa9a9",
             fontSize: "14px",
             borderRadius: "20px",
             textTransform: "capitalize",
@@ -30,7 +30,7 @@ const ExerciseCard = ({ exercise }) => {
             textTransform: "capitalize",
           }}
         >
-          {exercise.targetMuscle}
+          {exercise.target}
         </Button>
       </Stack>
       <Typography
